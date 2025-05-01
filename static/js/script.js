@@ -22,11 +22,11 @@ document
       const result = await response.json();
       alert(result.message);
 
-      loadCredits(); // Recargar la tabla después de guardar o actualizar
+      loadCredits(); 
       showTotalCreditsGraph();
       showCreditDistributionGraph();
       event.target.reset();
-      delete event.target.dataset.editingId; // Limpiar el estado de edición
+      delete event.target.dataset.editingId; 
       document.getElementById("submitButton").textContent = "Registrar Crédito";
     } catch (error) {
       console.error("Error al registrar/actualizar crédito:", error);
@@ -37,7 +37,7 @@ document.addEventListener("DOMContentLoaded", loadCredits);
 
 async function loadCredits() {
   const tbody = document.querySelector("#credit-Table tbody");
-  tbody.innerHTML = ""; // Limpia la tabla
+  tbody.innerHTML = ""; 
 
   try {
     // Hacer solicitud a la API Flask
@@ -45,7 +45,6 @@ async function loadCredits() {
     const credits = await response.json();
 
     if (credits.length === 0) {
-      // Mostrar una fila vacía si no hay datos
       const emptyRow = `
                 <tr>
                     <td colspan="7" style="text-align: center;">No hay registros disponibles</td>
@@ -124,8 +123,8 @@ async function deleteCredit(id) {
   }
 }
 
-const colors = ["#FF6384", "#36A2EB", "#FFCE56"]; // Colores vibrantes
-const borderColors = colors.map((color) => color.replace("0.6", "1")); // Bordes más sólidos
+const colors = ["#FF6384", "#36A2EB", "#FFCE56"]; 
+const borderColors = colors.map((color) => color.replace("0.6", "1")); 
 
 async function showTotalCreditsGraph() {
   const response = await fetch("/creditos");
@@ -275,8 +274,8 @@ document.getElementById("toggleCharts").addEventListener("click", function () {
     chartsContainer.style.display === "none" ||
     chartsContainer.style.display === ""
   ) {
-    chartsContainer.style.display = "flex"; // Asegurar que se muestra
-    showTotalCreditsGraph(); // Cargar gráfico al mostrar
+    chartsContainer.style.display = "flex";
+    showTotalCreditsGraph(); 
     showCreditDistributionGraph();
     this.textContent = "Ocultar Gráficas";
   } else {

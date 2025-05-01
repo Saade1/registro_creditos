@@ -3,7 +3,7 @@ import sqlite3
 
 app = Flask(
     __name__, template_folder="templates"
-)  # Asegúrate de tener una carpeta "templates"
+) 
 data_Base = "./db/creditos.db"
 
 

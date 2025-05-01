@@ -15,6 +15,6 @@ new Chart(ctx, {
   options: {
     responsive: true,
     maintainAspectRatio: false,
-    aspectRatio: 2, // Reduce el tamaño del gráfico
+    aspectRatio: 2, 
   },
 });

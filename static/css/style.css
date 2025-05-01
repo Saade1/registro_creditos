@@ -41,9 +41,9 @@ button {
 
 /* Botón de registrar crédito */
 button[type="submit"] {
-    width: 100%; /* Mismo ancho que los campos del formulario */
+    width: 100%; 
     padding: 10px;
-    margin-top: 10px; /* Espacio arriba para separarlo de los inputs */
+    margin-top: 10px; 
     display: block;
     text-align: center;
     font-size: 16px;
@@ -74,18 +74,17 @@ button:hover {
 }
 
 /* Estilos de la tabla */
-/* Ajustar ancho y diseño de la tabla */
 table {
-    width: 100%; /* Ocupa todo el ancho disponible */
-    font-size: 16px; /* Tamaño de texto más grande */
+    width: 100%; 
+    font-size: 16px;
     border-collapse: separate;
-    border-spacing: 0 10px; /* Espacio entre filas */
+    border-spacing: 0 10px; 
 }
 
 /* Ajustar tamaño de las celdas */
 th, td {
-    padding: 15px; /* Más espacio dentro de cada celda */
-    text-align: center; /* Centrar contenido */
+    padding: 15px; 
+    text-align: center; 
 }
 
 /* Mejorar encabezado */
@@ -97,7 +96,7 @@ th {
 
 /* Ajustar tamaño de las filas */
 tr {
-    height: 50px; /* Hacer filas más altas */
+    height: 50px; 
 }
 
 tr:hover {
@@ -110,7 +109,7 @@ tr:hover {
     justify-content: space-around;
     align-items: center;
     flex-wrap: wrap;
-    gap: 20px; /* Espaciado entre las gráficas */
+    gap: 20px; 
     margin-top: 30px;
 }
 
@@ -118,7 +117,7 @@ tr:hover {
 canvas {
     max-width: 500px;
     max-height: 700px;
-    flex: 1; /* Permitir que crezcan según el espacio */
+    flex: 1;
     background: #fff;
     padding: 10px;
     border-radius: 8px;

@@ -11,7 +11,7 @@ Este proyecto es una aplicación web para gestionar créditos, desarrollada con 
 - **SQLite** como base de datos
 
 ### 🔹 1. Clonar el repositorio
-Si el proyecto está en GitHub/GitLab, clónalo con:
+GitHub clónalo con:
 
 ```bash
 git clone https://github.com/Saade1/registro_creditos.git
