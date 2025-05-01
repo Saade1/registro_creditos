@@ -1,0 +1,143 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, #f8f9fa, #e9ecef);
+    color: #333;
+    margin: 0;
+    padding: 20px;
+}
+
+/* Encabezado */
+h1 {
+    text-align: center;
+    color: #007bff;
+}
+
+/* Estilos del formulario */
+form {
+    max-width: 400px;
+    
+    margin: 20px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+input, button {
+    width: calc(100% - 20px);
+        padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    background: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+/* Botón de registrar crédito */
+button[type="submit"] {
+    width: 100%; /* Mismo ancho que los campos del formulario */
+    padding: 10px;
+    margin-top: 10px; /* Espacio arriba para separarlo de los inputs */
+    display: block;
+    text-align: center;
+    font-size: 16px;
+    background: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+button[type="submit"]:hover {
+    background: #0056b3;
+}
+
+button.delete {
+    background: #dc3545;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button.delete:hover {
+    background: #b02a37;
+}
+
+button:hover {
+    background: #0056b3;
+}
+
+/* Estilos de la tabla */
+/* Ajustar ancho y diseño de la tabla */
+table {
+    width: 100%; /* Ocupa todo el ancho disponible */
+    font-size: 16px; /* Tamaño de texto más grande */
+    border-collapse: separate;
+    border-spacing: 0 10px; /* Espacio entre filas */
+}
+
+/* Ajustar tamaño de las celdas */
+th, td {
+    padding: 15px; /* Más espacio dentro de cada celda */
+    text-align: center; /* Centrar contenido */
+}
+
+/* Mejorar encabezado */
+th {
+    background: #007bff;
+    color: white;
+    font-size: 18px;
+}
+
+/* Ajustar tamaño de las filas */
+tr {
+    height: 50px; /* Hacer filas más altas */
+}
+
+tr:hover {
+    background: #f1f1f1;
+}
+
+/* Contenedor de las gráficas */
+#charts-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px; /* Espaciado entre las gráficas */
+    margin-top: 30px;
+}
+
+/* Ajuste de tamaño de las gráficas */
+canvas {
+    max-width: 500px;
+    max-height: 700px;
+    flex: 1; /* Permitir que crezcan según el espacio */
+    background: #fff;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#toggleCharts {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 15px;
+    background: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+}
+
+#toggleCharts:hover {
+    background: #0056b3;
+}

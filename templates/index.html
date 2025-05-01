@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de Créditos</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+
+<body>
+    <h1>Registro de Créditos</h1>
+    <form id="credit-form">
+        <input type="text" name="cliente" placeholder="Nombre de cliente" required>
+        <input type="number" name="monto" step="0.01" placeholder="Monto de crédito" required>
+        <input type="number" name="tasa_Interes" step="0.01" placeholder="Tasa de interés anual" required>
+        <input type="number" name="plazo" placeholder="Plazo de meses" required>
+        <input type="date" name="fecha_Otorgamiento" required>
+        <button id="submitButton" type="submit">Registrar Crédito</button>
+    </form>
+    <br>
+    <table id="credit-Table">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Cliente</th>
+                <th>Monto</th>
+                <th>Tasa de interés</th>
+                <th>Plazo</th>
+                <th>Fecha</th>
+                <th>Acciones</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Las filas se generan dinámicamente con script.js -->
+        </tbody>
+    </table>
+    <button id="toggleCharts">Mostrar/Ocultar Gráficas</button>
+    <div id="charts-container" style="display: none;">
+        <canvas id="totalCreditsChart"></canvas>
+        <canvas id="creditDistributionChart"></canvas>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+
+
+</body>
+
+</html>
